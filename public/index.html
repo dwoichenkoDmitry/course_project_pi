@@ -1,37 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="stylesheet" href="main.css">
+  <meta
+  name="description"
+  content="Web site created using create-react-app"
+  />
+  <title>React App</title>
+</head>
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root">
+    <header class="header">
+      <div class="headerContainer">
+        <h1 class="logo">LOGO</h1>
+        <a href="profile.html"><p class="profile">Profile</p></a>
+      </div>
+    </header>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <main class="main">
+      <h2 class="mainText">research</h2>
+      <div class="research">
+        <div class="reseach_container">
+          <input class="researchInput start" placeholder="start" type="text">
+          <input class="researchInput finish" placeholder="finish" type="text">
+          <input class="researchInput date" placeholder="date" type="date">
+          <input class="researchInput personNum" placeholder="numbers of persons" type="text">
+          <button class="GoBtn">GO</button>
+        </div>
+      </div>
+      <h2 class="mainText">RESULT</h2>
+      <div class="result">
+        <div class="result_item">
+          <p>The cheapest</p>
+          <p>date</p>
+          <a class="link_source" href="#"><p>link to source</p></a>
+        </div>
+        <div class="result_item">
+          <p>The fasters</p>
+          <p>date</p>
+          <a class="link_source" href="#"><p>link to source</p></a>
+        </div>
+        <div class="result_item">
+          <p>others</p>
+          <p>date</p>
+          <a class="link_source" href="#"><p>link to source</p></a>
+        </div>
+      </div>
+    </main>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+    <footer class="footer"></footer>
+  </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+
+  <script src="script.js"></script>
+</body>
 </html>
