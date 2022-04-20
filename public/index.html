@@ -1,62 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="stylesheet" href="main.css">
-  <meta
-  name="description"
-  content="Web site created using create-react-app"
-  />
-  <title>React App</title>
-</head>
-<body>
-  <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root">
-    <header class="header">
-      <div class="headerContainer">
-        <h1 class="logo">LOGO</h1>
-        <a href="profile.html"><p class="profile">Profile</p></a>
-      </div>
-    </header>
-
-    <main class="main">
-      <h2 class="mainText">research</h2>
-      <div class="research">
-        <div class="reseach_container">
-          <input class="researchInput start" placeholder="start" type="text">
-          <input class="researchInput finish" placeholder="finish" type="text">
-          <input class="researchInput date" placeholder="date" type="date">
-          <input class="researchInput personNum" placeholder="numbers of persons" type="text">
-          <button class="GoBtn">GO</button>
-        </div>
-      </div>
-      <h2 class="mainText">RESULT</h2>
-      <div class="result">
-        <div class="result_item">
-          <p>The cheapest</p>
-          <p>date</p>
-          <a class="link_source" href="#"><p>link to source</p></a>
-        </div>
-        <div class="result_item">
-          <p>The fasters</p>
-          <p>date</p>
-          <a class="link_source" href="#"><p>link to source</p></a>
-        </div>
-        <div class="result_item">
-          <p>others</p>
-          <p>date</p>
-          <a class="link_source" href="#"><p>link to source</p></a>
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer"></footer>
-  </div>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="main.css">
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <title>React App</title>
+  </head>
+  <body>
+    <div id="root">
+      <header id="header">
+        <div class="header__container container">
 
 
-  <script src="script.js"></script>
-</body>
+          <nav>
+            <ul>
+              <li><a href="#">Личный кабинет</a></li>
+              <li><a href="#">Маршруты</a></li>
+            </ul>
+          </nav>
+          <div id="logo"><img class="logoImg" src="logo.svg"></div>
+        </div>
+      </header>
+
+      <main id="main">
+        <button class="goBtn">Поехали!</button>
+        <div class="inpContainer">
+          <div class="inputBox">
+            <div class="startInp">
+              <input type="text" onkeyup="StartDrop()" name="start">
+              <div class="dropStart">
+
+              </div>
+            </div>
+          </div>
+          <div class="inputBox">
+            <div class="startInp">
+              <input type="text" onkeyup="StartDrop()" name="start">
+              <div class="dropStart">
+
+              </div>
+            </div>
+
+          </div>
+          <div class="inputBox">
+            <input type="date" class="dateInp InpMain">
+          </div>
+          <div class="inputBox">
+            <input type="text" class="personInp InpMain">
+          </div>
+        </div>
+
+
+      </main>
+
+      <footer id="footer">
+
+      </footer>
+    </div>
+
+
+    <script src="script.js"></script>
+  </body>
 </html>

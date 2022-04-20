@@ -142,6 +142,7 @@ function StartDrop(){
     }
 
 
+
 // John
 
     document.querySelector('.dropStart').innerHTML = '';
