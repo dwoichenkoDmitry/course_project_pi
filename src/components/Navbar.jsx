@@ -1,16 +1,20 @@
 import React from 'react';
 import classes from "./Navbar.module.css";
-import Logo from './img/logo.png';
-import Profile from './img/profile.svg'
+import Logo from './img/travel-guide (2).png';
+import Profile from './img/man-avatar.png'
 
-const Navbar = () => {
+
+
+const Navbar = ({props, funk}) => {
+
     return (
         <div className={classes.header}>
-            <img src={Logo} className={classes.logoImg} alt="logo"/>
+            <a href="#"><img src={Logo} className={classes.logoImg} alt="logo"/></a>
+            <p className={classes.textDecor}>FASTER CHEAPEST BETTER</p>
 
             <div className={classes.profileContainer}>
                 <img className={classes.logoImg} src={Profile} alt=""/>
-                <p className={classes.profileText}>Профиль</p>
+                {/*<p className={classes.profileText}>Профиль</p>*/}
             </div>
         </div>
     );
